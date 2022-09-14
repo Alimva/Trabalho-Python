@@ -7,12 +7,12 @@ cont = 0
 
 class Menu(Sair):
     if(cont == 0):
+        out = 0
         produtos = []
         tamanho = []
         cor = []
         quantidade = []
     while count == 0:
-        
         print('=== Menu ===')           
         print('1 - Compras')
         print('2 - Devoluções')
@@ -22,7 +22,10 @@ class Menu(Sair):
         if codigo == 1:
             cont = 1
             compras = Compras(produtos,tamanho,cor,quantidade)
-            compras.compras()
+            out = compras.compras()
+            if(out == 3):
+                break
+        
             
         elif codigo == 2:
             devolucoes = Devolucoes()

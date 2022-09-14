@@ -1,5 +1,4 @@
 
-from sair import Sair
 
 class Compras:
     def __init__(self,produtos,tamanho,cor,quantidade):
@@ -7,6 +6,7 @@ class Compras:
         self.tamanho = tamanho
         self.cor = cor
         self.quantidade = quantidade
+        
 
 
     def compras(self):
@@ -24,6 +24,7 @@ class Compras:
             
             print(" Tênis Run Max            Bota de Caminhada          Sandália Confort           Sapatilha de Escalada\n")
             print("    R$200,00                 R$350,00                   R$250,00                       R$500,00")
+            print("Descrição:               Descrição:                 Descrição:")
             print("O tênis ideal pa-        O companheiro perfei-      Elegante e estilosa,    A melhor amiga dos amantes")
             print("ra quem gosta de        to para suas aventuras.    esse design clássico é            de escalada.")
             print("de correr. Com um       Oferecendo o suporte e     o que você precisa para     Seja em uma academia de ")
@@ -43,7 +44,8 @@ class Compras:
                 carrinho = Carrinho()
                 carrinho.Carrinho()
             elif(check == '3'):
-                return 3
+                self.out = 3
+                return self.out
             elif(check == "Tênis Run Max" or check == "tênis run max"):
                 self.produtos.append('Tênis Run Max')
                 aux = int(input('Tamanho (temos tamanhos 35 a 47): '))
