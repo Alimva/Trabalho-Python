@@ -1,3 +1,4 @@
+
 class Sair:
     @staticmethod
     def sair():
