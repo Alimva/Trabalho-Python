@@ -2,11 +2,13 @@ from sair import Sair
 from compras import Compras
 from devolucoes import Devolucoes
 
-count = 0
-cont = 0
 
 
-class Menu(Sair):
+#class Menu(Sair):
+def menuApp():
+    count = 0
+    cont = 0
+
     if(cont == 0):
         out = 0
         produtos = []

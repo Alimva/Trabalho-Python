@@ -1,4 +1,4 @@
-
+from carrinho import Carrinho
 
 class Compras:
     def __init__(self,produtos,tamanho,cor,quantidade):
@@ -41,8 +41,9 @@ class Compras:
             if(check == "1"):
                 break
             elif(check == "2"):
-                carrinho = Carrinho()
-                carrinho.Carrinho()
+
+                carrinho = Carrinho([self.produtos],[self.tamanho],[self.cor],[self.quantidade])
+                carrinho.carrinho()
             elif(check == '3'):
                 self.out = 3
                 return self.out
